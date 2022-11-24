@@ -1,0 +1,20 @@
+#middleSlider{
+	margin-bottom: 24px;
+}
+
+.panel-click.selected{
+	pointer-events: none;
+}
+
+.items.productList{
+	margin-bottom: 24px;
+}
+
+.removeFromWishlist{
+	display: none;
+}
+#catalog-section-banners_mobile li img {
+     width: 100%;
+	margin-bottom: 24px;
+}
+
