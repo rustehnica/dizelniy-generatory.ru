@@ -24,10 +24,7 @@
 					<?endforeach;?>
 				</div>
 			<?endif;?>
-		    <div class="rating">
-		      <i class="m" style="width:<?=(intval($arResult["PROPERTIES"]["RATING"]["VALUE"]) * 100 / 5)?>%"></i>
-		      <i class="h"></i>
-		    </div>
+
 			<?if(!empty($arResult["EXTRA_SETTINGS"]["SHOW_TIMER"])):?>
 				<div class="specialTime productSpecialTime" id="timer_<?=$arResult["EXTRA_SETTINGS"]["TIMER_UNIQ_ID"];?>_<?=$uniqID?>">
 					<div class="specialTimeItem">

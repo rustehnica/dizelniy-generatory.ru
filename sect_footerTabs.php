@@ -25,38 +25,35 @@
 	<div class="wrapper">
 		<div class="items">
 			<?$APPLICATION->IncludeComponent("dresscode:products.by.filter", ".default", array(
+                "COMPONENT_TEMPLATE" => ".default",
+                    "IBLOCK_TYPE" => "catalog",
+                    "IBLOCK_ID" => $catalogIblockId,
+                    "HIDE_NOT_AVAILABLE" => "N",
+                    "HIDE_MEASURES" => "N",
+                    "PROP_NAME" => "OFFERS",
+                    "ELEMENTS_COUNT" => "20",
+                    "SORT_PROPERTY_NAME" => "RAND",
+                    "SORT_VALUE" => "DESC",
+                    "PICTURE_WIDTH" => "220",
+                    "PICTURE_HEIGHT" => "200",
+                    "PRODUCT_PRICE_CODE" => $arPriceCodes,
+                    "CONVERT_CURRENCY" => "N",
+                    "CACHE_TYPE" => "A",
+                    "CACHE_TIME" => "36000000",
+                    "FILTER_TYPE" => "BESTSELLERS",
+                    "PROP_VALUE" => "540",
+                    "SECTION_ID" => "437",
+                    "COMPONENT_TITLE" => "",
+                    "CURRENCY_ID" => "RUB",
+                    "ADAPTIVE_VERSION" => "V1"
+                ),
+                false,
+                array(
+                "ACTIVE_COMPONENT" => "N"
+                )
+            );?>
+			<?$APPLICATION->IncludeComponent("dresscode:catalog.viewed.product", "footer", Array(
 	"COMPONENT_TEMPLATE" => ".default",
-		"IBLOCK_TYPE" => "catalog",
-		"IBLOCK_ID" => $catalogIblockId,
-		"HIDE_NOT_AVAILABLE" => "N",
-		"HIDE_MEASURES" => "N",
-		"PROP_NAME" => "OFFERS",
-		"ELEMENTS_COUNT" => "20",
-		"SORT_PROPERTY_NAME" => "RAND",
-		"SORT_VALUE" => "DESC",
-		"PICTURE_WIDTH" => "220",
-		"PICTURE_HEIGHT" => "200",
-		"PRODUCT_PRICE_CODE" => $arPriceCodes,
-		"CONVERT_CURRENCY" => "N",
-		"CACHE_TYPE" => "A",
-		"CACHE_TIME" => "36000000",
-		"FILTER_TYPE" => "BESTSELLERS",
-		"PROP_VALUE" => "540",
-		"SECTION_ID" => "437",
-		"COMPONENT_TITLE" => "",
-		"CURRENCY_ID" => "RUB",
-		"ADAPTIVE_VERSION" => "V1"
-	),
-	false,
-	array(
-	"ACTIVE_COMPONENT" => "N"
-	)
-);?>
-			<?$APPLICATION->IncludeComponent(
-	"dresscode:catalog.viewed.product", 
-	".default", 
-	array(
-		"COMPONENT_TEMPLATE" => ".default",
 		"VIEWED_COUNT" => "10",
 		"VIEWED_NAME" => "Y",
 		"VIEWED_IMAGE" => "Y",
@@ -70,26 +67,27 @@
 		"ACTION_VARIABLE" => "action",
 		"PRODUCT_ID_VARIABLE" => "id",
 		"SET_TITLE" => "N",
-		"IBLOCK_TYPE" => "catalog",
-		"IBLOCK_ID" => $catalogIblockId,
+		"IBLOCK_TYPE" => "catalog",	// Тип Инфоблока
+		"IBLOCK_ID" => "25",	// Инфоблок
 		"HIDE_NOT_AVAILABLE" => "N",
-		"HIDE_MEASURES" => "N",
+		"HIDE_MEASURES" => "Y",	// Не отображать единицы измерения у товаров
 		"PROP_NAME" => "OFFERS",
-		"ELEMENTS_COUNT" => "10",
+		"ELEMENTS_COUNT" => "10",	// Количество элементов
 		"SORT_PROPERTY_NAME" => "timestamp_x",
 		"SORT_VALUE" => "DESC",
-		"PICTURE_WIDTH" => "220",
-		"PICTURE_HEIGHT" => "200",
-		"PRODUCT_PRICE_CODE" => $arPriceCodes,
-		"CONVERT_CURRENCY" => "N",
-		"CACHE_TYPE" => "A",
-		"CACHE_TIME" => "12",
-		"CURRENCY_ID" => "RUB",
-		"ADAPTIVE_VERSION" => "V1"
+		"PICTURE_WIDTH" => "220",	// Ширина изображений
+		"PICTURE_HEIGHT" => "200",	// Высота изображений
+		"PRODUCT_PRICE_CODE" => "",	// Тип цены
+		"CONVERT_CURRENCY" => "Y",	// Показывать цены в одной валюте
+		"CACHE_TYPE" => "A",	// Тип кеширования
+		"CACHE_TIME" => "12",	// Время кеширования (сек.)
+		"CURRENCY_ID" => "RUB",	// Валюта
+		"ADAPTIVE_VERSION" => "V1",	// Расчитывать адаптив карусели для
+		"LAZY_LOAD_PICTURES" => "N",	// Использовать lazy load для изображений
 	),
 	false,
 	array(
-		"ACTIVE_COMPONENT" => "Y"
+	"ACTIVE_COMPONENT" => "Y"
 	)
 );?>
 

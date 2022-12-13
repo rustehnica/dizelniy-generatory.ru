@@ -477,3 +477,92 @@ h3{
 	top: 0;
 	position: relative;
 }
+#footerCategory.tabs-wrap{
+	margin-bottom:0;
+	padding-bottom:0;
+}
+#footerCategory.tabs-wrap .tab-btn-link{
+	width:33.3333333333333333333333333333333%;
+}
+#footerCategory.tabs-wrap .tab-btn-link{
+	font-size:1.5rem;
+}
+#footerCategory.tabs-wrap .tab-btn-link{
+	background-color:#ff9601;
+}
+#footerCategory.tabs-wrap .tab-btn-link:hover{
+	background-color:#2b2b2b;
+}
+#footerCategory.tabs-wrap .tab-btn-link.active, #footerCategory.tabs-wrap .tab-content{
+	color:#fff !important;
+	background-color:#2b2b2b;
+}
+#footerCategory.tabs-wrap .tab-content{
+	margin-top: 1rem;
+	padding:1rem 0;
+	height: 20rem;
+}
+#footerCategory.tabs-wrap .tab-content:nth-child(2){
+	text-align: center;
+	line-height: 3.4rem;
+}
+#footerCategory.tabs-wrap .tab-content img{
+	width: 100%;
+}
+#footerCategory .wrapper{
+	display:flex;
+	height: 100%;
+}
+#footerCategory .item.wrapper{
+	color: #ff9601;
+}
+#footerCategory .wrap{
+	flex-wrap: wrap;
+}
+#footerCategory .tab-content:nth-child(2)  .col,
+#footerCategory .tab-content:nth-child(1) .wrap > .col{
+	flex: 1;
+	flex-basis: 20%;
+	border-right: 1px solid #646464;
+	border-top: 1px solid #646464;
+	border-bottom: 1px solid #646464;
+	padding: 1rem 0;
+	font-size: 1.2rem;
+}
+#footerCategory .tab-content:nth-child(1) .wrap > .col{
+	padding:1rem;
+	line-height: 1.8rem;
+}
+#footerCategory .tab-content:nth-child(1) .wrap > .col > .item:first-child{
+	line-height: 1.6rem;
+	margin-bottom: 0.5rem;
+}
+#footerCategory .tab-content:nth-child(1) .wrap > .col:nth-child(n+5){
+	border-top:0;
+}
+#footerCategory .tab-content:nth-child(1) .wrap > .col:nth-child(n+7){
+	border-bottom:0;
+	border-right:0;
+}
+#footerCategory .tab-content:nth-child(1) .item > .col{
+	width: 25%;
+}
+
+#footerCategory .tab-content:nth-child(3)  .col{
+	flex: 1;
+	flex-basis: 20%;
+	border-right: 1px solid #646464;
+	border-top: 1px solid #646464;
+	border-bottom: 1px solid #646464;
+	padding: 1rem 0;
+	font-size: 1.2rem;
+
+}
+#footerCategory .tab-content:nth-child(3)  .col > .item:first-child{
+	padding: 0 3rem ;
+	height:15rem;
+}
+#footerCategory.tabs-wrap .tab-content:nth-child(3){
+	text-align: center;
+	line-height: 2.3rem;
+}

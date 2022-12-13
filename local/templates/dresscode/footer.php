@@ -28,7 +28,20 @@
 			),
 			false
 		);?>
-		<div id="footer"<?if(!empty($TEMPLATE_FOOTER_VARIANT) && $TEMPLATE_FOOTER_VARIANT != "default"):?> class="variant_<?=$TEMPLATE_FOOTER_VARIANT?>"<?endif;?>>
+
+        <?$APPLICATION->IncludeComponent(
+            "bitrix:main.include",
+            ".default",
+            array(
+                "AREA_FILE_SHOW" => "sect",
+                "AREA_FILE_SUFFIX" => "footerTabsCaregory",
+                "AREA_FILE_RECURSIVE" => "Y",
+                "EDIT_TEMPLATE" => ""
+            ),
+            false
+        );?>
+
+        <div id="footer"<?if(!empty($TEMPLATE_FOOTER_VARIANT) && $TEMPLATE_FOOTER_VARIANT != "default"):?> class="variant_<?=$TEMPLATE_FOOTER_VARIANT?>"<?endif;?>>
 			<div id="rowFooter">
 				<div id="leftFooter">
 					<div class="footerRow">
