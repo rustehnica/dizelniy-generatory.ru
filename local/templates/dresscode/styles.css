@@ -456,6 +456,12 @@ h3{
 .product .name{
 	font-weight: bold;
 }
+
+#geo-location-window .geo-location-window-container{
+	height: 80%;
+	width: 80%;
+}
+
 .tabs-wrap .tabs-content{
 	margin-top: 0 !important;
 }
@@ -513,11 +519,23 @@ h3{
 	display:flex;
 	height: 100%;
 }
-#footerCategory .item.wrapper{
+#footerCategory .item.wrapper a{
 	color: #ff9601;
+	text-decoration: none;
+}
+#footerCategory .item.wrapper a:hover{
+	text-decoration: underline;
 }
 #footerCategory .wrap{
 	flex-wrap: wrap;
+}
+#footerCategory .tab-content:nth-child(2)  .col a, #footerCategory .tab-content:nth-child(3)  .col a{
+	color: #fff;
+	text-decoration: none;
+}
+#footerCategory .tab-content:nth-child(2)  .col a:hover, #footerCategory .tab-content:nth-child(3)  .col a:hover{
+	color: #ff9601;
+	text-decoration: underline;
 }
 #footerCategory .tab-content:nth-child(2)  .col,
 #footerCategory .tab-content:nth-child(1) .wrap > .col{
