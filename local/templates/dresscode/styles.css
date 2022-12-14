@@ -181,7 +181,6 @@ h3{
 } */
 #elementProperties .stats, #zp .stats{
 	margin-top:1rem;
-	width: calc(50% - 2px);
 	border-spacing: 0px;
 }
 #zp .stats{	
@@ -213,11 +212,10 @@ h3{
 }
 .detailPropertiesTable{
 	display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: stretch;
-    align-items: flex-start;
-	justify-content: space-between;
+}
+.detailPropertiesTable div{
+	width: calc(50% - 2px);
+	margin-right: 2px;
 }
 .tabs-wrap{
 	padding: 0 24px 24px 24px;
