@@ -249,12 +249,12 @@
 			"NAME" => GetMessage("CATALOG_ELEMENT_DESCRIPTION"),
 			"ID" => "detailText"
 		);
-		$arResult["TABS"]["CATALOG_ELEMENT_DESCRIPTION_KOMPLEKT"] = array(
+		$arResult["TABS"]["CATALOG_ELEMENT_DESCRIPTION_KOMPLECT"] = array(
 			"DISABLED" => !empty($arResult["DETAIL_TEXT"]) ? "N" : "Y",
 			"NAME" => "Комлект поставки",
-			"ID" => "detailText_komplekt",
+			"ID" => "detailText_komplect",
 			"UNDER" => 1,
-			"ANCHOR" => "komplekt"
+			"ANCHOR" => "komplect"
 		);
 		$arResult["TABS"]["CATALOG_ELEMENT_DESCRIPTION_PODG"] = array(
 			"DISABLED" => !empty($arResult["DETAIL_TEXT"]) ? "N" : "Y",
